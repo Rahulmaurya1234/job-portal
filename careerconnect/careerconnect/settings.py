@@ -43,6 +43,10 @@ INSTALLED_APPS = [
     'ml',
     'dashboard',
     'core',
+    'contact',
+    'about',
+    'customer_dashboard',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

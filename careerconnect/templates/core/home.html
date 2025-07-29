@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <head>
-    <title>Home Page</title>
+    <title>{% block title %}Home Page{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'core/home.css' %}">
 </head>
     

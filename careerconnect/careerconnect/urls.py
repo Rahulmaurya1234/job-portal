@@ -23,5 +23,9 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('', include('core.urls')),
     path('dashboard/', include('dashboard.urls')),
+    path('contact/', include('contact.urls')),
+    path('about/', include('about.urls')),
+    path('customer_dashboard/', include('customer_dashboard.urls')),
+    path('jobs/', include('jobs.urls')),
 ]
 # Include URLs for other apps

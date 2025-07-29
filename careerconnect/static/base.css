@@ -31,20 +31,24 @@
         
         .container {
             width: 90%;
+            margin-right: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            justify-content: space-evenly;
         }
         
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width:30%;
         }
         
         .logo {
             font-size: 24px;
             font-weight: 700;
             color: var(--primary);
+            width:40%;
         }
         
         .nav-links {
@@ -70,6 +74,9 @@
             cursor: pointer;
             transition: all 0.3s;
             border: none;
+        }
+        .btn-outline:hover{
+            box-shadow: 5px 5px 5px 5px grey;
         }
         
         .btn-primary {

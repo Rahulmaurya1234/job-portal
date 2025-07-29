@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="{% static 'base.css' %}">
 </head>
 <body>
-    <header>
+    <header >
         <div class="container">
             <nav>
                 <div class="logo">CareerConnect</div>
                 <div class="nav-links">
                     <a href="{% url 'home' %}">Home</a>
-                    <a href="{% static 'core/job.html' %}">Jobs</a>
-                    <a href="#">Companies</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="{% url 'jobs' %}">Jobs</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'contact' %}">Contact</a>
                 </div>
                 <div>
                     <a href="/accounts/login/"><button class="btn btn-outline">Login</button></a>
@@ -37,17 +36,16 @@
                     <div class="footer-logo">CareerConnect</div>
                     <p class="footer-description">Connecting talented professionals with top companies worldwide. Your career journey starts here.</p>
                     <div class="social-links">
-                        <a href="#">FB</a>
-                        <a href="#">TW</a>
-                        <a href="#">IG</a>
-                        <a href="#">IN</a>
+                        <a href="https://facebook.com">FB</a>
+                        <a href="https://twitter.com">TW</a>
+                        <a href="https://www.instagram.com/amazing_love_07/">IG</a>
+                        <a href="https://www.linkedin.com/in/rahul-maurya-2003ji/">IN</a>
                     </div>
                 </div>
-                
                 <div class="footer-links">
                     <h3>For Candidates</h3>
                     <ul>
-                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="{% url 'jobs' %}">Browse Jobs</a></li>
                         <li><a href="#">Job Alerts</a></li>
                         <li><a href="#">Career Advice</a></li>
                         <li><a href="#">Resume Builder</a></li>
@@ -67,8 +65,8 @@
                 <div class="footer-links">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
