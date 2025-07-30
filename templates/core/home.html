@@ -155,6 +155,19 @@
                 </div>
             </div>
         </div>
+        <script>
+        let apply = document.querySelector(".btn1");
+        const isloggedin = "{{ request.user.is_authenticated|yesno:'true,false'}}";
+        
+            apply.addEventListener('click',function (){
+    if(isloggedin === "true"){
+        console.log("you are in")
+    } else {
+        window.location.href = "/accounts/login/"
+    }
+})
+
+        </script>
         <script src="/static/app.js"></script>
     </section>
 

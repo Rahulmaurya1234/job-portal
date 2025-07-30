@@ -3,10 +3,15 @@ from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import check_password
+from django.contrib.auth.decorators import login_required
+
 
 from .forms import CustomUserRegistrationForm  # if you're using a form later
 
 CustomUser = get_user_model()
+
+def home(request):
+    return render(request, "home.html")
 
 def login_view(request):
     if request.method == 'POST':
