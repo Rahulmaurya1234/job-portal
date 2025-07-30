@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{% static 'base.css' %}">
 </head>
 <body>
-    <header >
+    <header style = "border: 0;" >
         <div class="container">
             <nav>
                 <div class="logo">CareerConnect</div>
@@ -17,7 +17,7 @@
                     <a href="{% url 'contact' %}">Contact</a>
                 </div>
                 <div>
-                    <a href="/accounts/login/"><button class="btn btn-outline">Login</button></a>
+                    <a href="/accounts/login/"><button class="btn btn-outline local">Login</button></a>
                     <a href="/accounts/register/"><button class="btn btn-primary">Register</button></a>
                 </div>
             </nav>
@@ -48,7 +48,7 @@
                         <li><a href="{% url 'jobs' %}">Browse Jobs</a></li>
                         <li><a href="#">Job Alerts</a></li>
                         <li><a href="#">Career Advice</a></li>
-                        <li><a href="#">Resume Builder</a></li>
+                        <li><a href="#">Main Branch</a></li>
                     </ul>
                 </div>
                 
@@ -74,7 +74,7 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 CareerConnect. All rights reserved by Rahulmaurya | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2025 CareerConnect. All rights reserved by CareerConnect Team | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>

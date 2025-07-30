@@ -23,7 +23,7 @@ body {
 /* NAVBAR */
 header {
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -74,6 +74,7 @@ nav > div:last-child {
     border: none;
     transition: 0.3s ease;
     text-decoration: none;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .btn-outline {
@@ -94,6 +95,7 @@ nav > div:last-child {
 
 .btn-primary:hover {
     background-color: #005fa3;
+    box-shadow: 5px 5px 5px black -5px -5x 5px white;
 }
 
 /* FOOTER */
